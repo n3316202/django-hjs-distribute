@@ -1,5 +1,5 @@
 # https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow
-name: learn-github-actions
+name: using-python-version
 on:
     push:
         branches: [dev_2_distribute_simple_example_2025-03-22]
@@ -20,4 +20,4 @@ jobs:
                   architecture: 'x64'
             # You can test your matrix by printing the current Python version
             - name: Display Python version
-              run: python -c "import sys; print(sys.version)"
+              run: python -c "import sys; print(sys.version); print('안녕하세요')"
